@@ -1,5 +1,6 @@
 # ex_server
 
+```c
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
@@ -36,7 +37,7 @@ app.post('/api/todo',(req,res)=>{
 app.listen(3000,()=>{
     console.log("server start!");
 })
-
+```
 
 실행 : node app.js
 
@@ -51,6 +52,7 @@ https://www.npmjs.com/package/cors
 
 $ npm install cors
 
+```c
 const express = require('express')
 const cors = require('cors')
 const app = express()
@@ -64,3 +66,4 @@ app.get('/products/:id', function (req, res, next) {
 app.listen(80, function () {
   console.log('CORS-enabled web server listening on port 80')
 })
+```
